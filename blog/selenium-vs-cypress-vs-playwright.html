@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Selenium vs Cypress vs Playwright (2025): The Definitive Comparison | QATools.dev</title>
+  <meta name="description" content="Selenium vs Cypress vs Playwright in 2025 — a detailed comparison of setup, speed, browser support, language support, CI/CD integration, and community. Includes a decision matrix to help you choose." />
+  <meta name="keywords" content="selenium vs cypress vs playwright, cypress vs playwright, selenium vs playwright, best automation framework 2025, selenium vs cypress 2025, playwright vs cypress comparison" />
+  <meta name="author" content="AtulSingh-QA" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://atulsingh-qa.github.io/blog/selenium-vs-cypress-vs-playwright.html" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://atulsingh-qa.github.io/blog/selenium-vs-cypress-vs-playwright.html" />
+  <meta property="og:title" content="Selenium vs Cypress vs Playwright (2025): The Definitive Comparison" />
+  <meta property="og:description" content="Detailed comparison of the three most popular UI automation frameworks. Setup, speed, browser support, CI/CD, language, and a decision matrix." />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Selenium vs Cypress vs Playwright (2025): The Definitive Comparison for QA Engineers",
+    "description": "A detailed comparison of Selenium, Cypress, and Playwright across setup complexity, speed, browser support, CI/CD integration, language support, and community size.",
+    "author": { "@type": "Person", "name": "AtulSingh-QA" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "QATools.dev",
+      "url": "https://atulsingh-qa.github.io/"
+    },
+    "datePublished": "2025-06-01",
+    "dateModified": "2025-06-01",
+    "mainEntityOfPage": "https://atulsingh-qa.github.io/blog/selenium-vs-cypress-vs-playwright.html"
+  }
+  </script>
+
+  <!-- ADSTERRA_HEAD_SCRIPT_PLACEHOLDER -->
+
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="blog.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">⚡</span>
+        <span class="logo-text">QA<span class="logo-accent">Tools</span>.dev</span>
+      </a>
+      <nav class="nav-links">
+        <a href="/#directory">Directory</a>
+        <a href="/#categories">Categories</a>
+        <a href="/blog/" class="active-nav">Blog</a>
+        <a href="/#downloads">Free Downloads</a>
+        <a href="/#premium" class="nav-cta">⬇ Premium Kits</a>
+      </nav>
+      <button class="hamburger" aria-label="Open menu" onclick="toggleMenu()">☰</button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="/#directory" onclick="toggleMenu()">Directory</a>
+      <a href="/blog/" onclick="toggleMenu()">Blog</a>
+      <a href="/#downloads" onclick="toggleMenu()">Free Downloads</a>
+      <a href="/#premium" onclick="toggleMenu()">Premium Kits</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ARTICLE HERO -->
+    <section class="article-hero">
+      <div class="container">
+        <div class="post-meta" style="justify-content:center; margin-bottom:20px;">
+          <span class="post-cat">Tool Comparison</span>
+          <span class="post-date">June 2025</span>
+          <span class="post-read">⏱ 12 min read</span>
+        </div>
+        <h1 class="hero-title" style="font-size:clamp(1.8rem,4vw,2.8rem); text-align:center; max-width:860px; margin:0 auto 20px;">
+          Selenium vs Cypress vs Playwright (2025):<br/>
+          <span class="gradient-text">The Definitive Comparison</span>
+        </h1>
+        <p class="hero-subtitle" style="max-width:680px; margin:0 auto; text-align:center;">
+          The three titans of UI test automation — compared across every dimension that matters for a QA team in 2025. With a decision matrix at the end.
+        </p>
+      </div>
+    </section>
+
+    <!-- AD SLOT — BELOW ARTICLE HERO -->
+    <div class="ad-container ad-banner" aria-label="Advertisement">
+      <!-- ADSTERRA BANNER — PASTE YOUR CODE BELOW -->
+      <div class="ad-placeholder"><span>Advertisement</span></div>
+    </div>
+
+    <!-- ARTICLE CONTENT -->
+    <section class="blog-section" style="padding-top:32px;">
+      <div class="container">
+        <div class="article-layout">
+
+          <!-- MAIN ARTICLE BODY -->
+          <article class="article-body">
+
+            <p>If you've spent more than five minutes in the QA world, you've heard these three names. Selenium, Cypress, Playwright — each one has its advocates, its critics, and its place. But when you're actually choosing a framework for a real project or a new job, the question isn't "which is best?" It's <strong>"which is right for my situation?"</strong></p>
+
+            <p>This article cuts through the noise. We'll compare all three across every dimension that actually matters — then give you a decision matrix to make the call in under 60 seconds.</p>
+
+            <h2>Quick Overview</h2>
+
+            <p>Before going deep, here's the one-paragraph pitch for each:</p>
+
+            <p><strong>Selenium WebDriver</strong> is the grandfather of browser automation, launched in 2004. It works with any browser, any language, and any CI system. It has the largest community, the most job postings, and the most Stack Overflow answers. Its weakness: it's slow, verbose, and requires significant setup.</p>
+
+            <p><strong>Cypress</strong> launched in 2017 with a radical premise — what if the test runner lived inside the browser? This eliminated the WebDriver layer entirely, giving Cypress dramatically faster execution, real-time reloads, automatic waiting, and a beautiful test dashboard. Its weakness: JavaScript/TypeScript only, and historically limited to Chromium-family browsers (Firefox support was added but remains secondary).</p>
+
+            <p><strong>Playwright</strong> is Microsoft's 2020 entry, built by the same engineers who created Puppeteer. It combines the best of both worlds: multi-browser support (Chromium, Firefox, WebKit/Safari), multi-language support (JS, Python, Java, C#), blazing parallel execution, and a modern API. Its weakness: newer ecosystem means fewer tutorials, StackOverflow answers, and community plugins.</p>
+
+            <h2>1. Setup Complexity</h2>
+
+            <p>How long does it take to go from zero to a running test?</p>
+
+            <p><strong>Selenium</strong> requires the most setup. You need to install the language SDK, add the Selenium dependency via Maven/pip/npm, download a browser driver (or use WebDriverManager to automate this), and configure browser options. A Java project needs a pom.xml, a TestNG/JUnit dependency, and a BaseTest class before you write a single test. Expect 30–60 minutes for a first working test.</p>
+
+            <p><strong>Cypress</strong> is dramatically simpler. One command — <code>npm install cypress</code> — gives you a test runner, assertion library, network interceptor, and screenshot/video recording. Open it with <code>npx cypress open</code> and you're running tests in minutes. First working test: under 10 minutes.</p>
+
+            <p><strong>Playwright</strong> matches Cypress for simplicity: <code>npm init playwright@latest</code> installs everything including browsers. For Python: <code>pip install playwright && playwright install</code>. First working test: under 10 minutes. It also ships with a codegen tool (<code>playwright codegen</code>) that records your browser actions into test code automatically.</p>
+
+            <blockquote>Winner: Playwright and Cypress tie for easiest setup. Selenium requires significantly more configuration.</blockquote>
+
+            <h2>2. Browser Support</h2>
+
+            <div class="compare-table-wrap">
+              <table class="compare-table">
+                <thead>
+                  <tr>
+                    <th>Browser</th>
+                    <th>Selenium</th>
+                    <th>Cypress</th>
+                    <th>Playwright</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Chrome / Chromium</td>
+                    <td class="tc-good">✓ Full</td>
+                    <td class="tc-good">✓ Full</td>
+                    <td class="tc-good">✓ Full</td>
+                  </tr>
+                  <tr>
+                    <td>Firefox</td>
+                    <td class="tc-good">✓ Full</td>
+                    <td class="tc-mid">⚠ Partial</td>
+                    <td class="tc-good">✓ Full</td>
+                  </tr>
+                  <tr>
+                    <td>Safari / WebKit</td>
+                    <td class="tc-good">✓ Full</td>
+                    <td class="tc-bad">✗ No</td>
+                    <td class="tc-good">✓ Full</td>
+                  </tr>
+                  <tr>
+                    <td>Edge</td>
+                    <td class="tc-good">✓ Full</td>
+                    <td class="tc-good">✓ (Chromium)</td>
+                    <td class="tc-good">✓ Full</td>
+                  </tr>
+                  <tr>
+                    <td>IE 11</td>
+                    <td class="tc-mid">⚠ Legacy only</td>
+                    <td class="tc-bad">✗ No</td>
+                    <td class="tc-bad">✗ No</td>
+                  </tr>
+                  <tr>
+                    <td>Mobile browsers</td>
+                    <td class="tc-good">✓ Via Appium</td>
+                    <td class="tc-mid">⚠ Viewport only</td>
+                    <td class="tc-good">✓ Mobile emulation</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <blockquote>Winner: Selenium and Playwright both offer genuine cross-browser coverage. Cypress lags on Firefox and has no Safari support — a real problem if your users are on iOS or Mac.</blockquote>
+
+            <h2>3. Language Support</h2>
+
+            <p>This is often the deciding factor for enterprise teams.</p>
+
+            <div class="compare-table-wrap">
+              <table class="compare-table">
+                <thead>
+                  <tr>
+                    <th>Language</th>
+                    <th>Selenium</th>
+                    <th>Cypress</th>
+                    <th>Playwright</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>Java</td><td class="tc-good">✓</td><td class="tc-bad">✗</td><td class="tc-good">✓</td></tr>
+                  <tr><td>Python</td><td class="tc-good">✓</td><td class="tc-bad">✗</td><td class="tc-good">✓</td></tr>
+                  <tr><td>JavaScript</td><td class="tc-good">✓</td><td class="tc-good">✓</td><td class="tc-good">✓</td></tr>
+                  <tr><td>TypeScript</td><td class="tc-good">✓</td><td class="tc-good">✓</td><td class="tc-good">✓</td></tr>
+                  <tr><td>C#</td><td class="tc-good">✓</td><td class="tc-bad">✗</td><td class="tc-good">✓</td></tr>
+                  <tr><td>Ruby</td><td class="tc-good">✓</td><td class="tc-bad">✗</td><td class="tc-bad">✗</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <blockquote>Winner: Selenium supports the most languages. Playwright is a close second and covers every major enterprise language. Cypress is JavaScript/TypeScript only — a hard blocker for Java or Python shops.</blockquote>
+
+            <h2>4. Execution Speed</h2>
+
+            <p>Speed matters enormously for CI pipeline cost and developer feedback loops.</p>
+
+            <p><strong>Selenium</strong> is the slowest of the three. Every command crosses the WebDriver protocol boundary — a round-trip from test code to browser and back. Tests that pass commands rapidly suffer from accumulated latency. Parallel execution is possible but requires Selenium Grid or cloud infrastructure.</p>
+
+            <p><strong>Cypress</strong> executes inside the browser process, eliminating the network round-trip. It auto-waits for elements to become actionable, reducing flaky <code>Thread.sleep()</code> calls. For typical E2E test suites, Cypress is roughly 2–3x faster than equivalent Selenium tests.</p>
+
+            <p><strong>Playwright</strong> uses the Chrome DevTools Protocol (CDP) natively, which is faster than WebDriver. Its first-class parallelism model runs tests across multiple workers with a single flag: <code>--workers=4</code>. For large test suites, Playwright's parallel execution makes it the fastest of the three by total wall-clock time.</p>
+
+            <blockquote>Winner: Playwright for large suites (parallelism). Cypress for single-thread execution speed. Selenium is the slowest.</blockquote>
+
+            <h2>5. Automatic Waiting</h2>
+
+            <p>Flaky tests are the #1 pain point in test automation. All three frameworks handle waiting differently.</p>
+
+            <p><strong>Selenium</strong> provides implicit waits (applied globally) and explicit waits (<code>WebDriverWait</code> with <code>ExpectedConditions</code>). These must be written manually. Forgetting to add a wait is the leading cause of flaky Selenium tests.</p>
+
+            <p><strong>Cypress</strong> automatically retries commands and assertions until they pass or timeout. When you write <code>cy.get('.button').click()</code>, Cypress waits for the element to exist, be visible, and be actionable — automatically. This eliminates most flakiness without any extra code.</p>
+
+            <p><strong>Playwright</strong> also auto-waits, checking for visibility, stability, enabled state, and whether the element receives pointer events before acting. It has a strict mode that throws errors on ambiguous selectors — forcing you to write precise locators that hold up over time.</p>
+
+            <blockquote>Winner: Playwright and Cypress tie. Both auto-wait intelligently. Selenium requires manual wait management.</blockquote>
+
+            <h2>6. CI/CD Integration</h2>
+
+            <p>All three work in CI. The difference is in ease of setup.</p>
+
+            <p>A GitHub Actions pipeline for <strong>Selenium</strong> (Java) requires setting up a JDK, installing Chrome, configuring WebDriverManager, and running Maven. About 20 lines of YAML.</p>
+
+            <p><strong>Cypress</strong> has an official GitHub Action (<code>cypress-io/github-action@v6</code>) that handles everything in 3 lines. It also has a cloud Dashboard product (paid) that stores videos, screenshots, and provides parallelism.</p>
+
+            <p><strong>Playwright</strong> ships with a ready-made GitHub Actions example in the docs. The <code>playwright/action</code> installs browsers and runs tests in one step. Its built-in HTML reporter, trace viewer, and video recording work without additional config.</p>
+
+            <blockquote>Winner: Cypress for simplest CI setup. Playwright for the best built-in CI reporting. Selenium requires the most configuration.</blockquote>
+
+            <h2>7. Debugging Experience</h2>
+
+            <p><strong>Selenium</strong> debugging means reading stack traces, adding screenshots on failure, and using IDE breakpoints. Workable but manual.</p>
+
+            <p><strong>Cypress</strong> has a time-travel debugger — you can hover over each step in the test runner and see a snapshot of the DOM at that exact moment. It records video of every test run automatically. This is the best debugging experience for developers.</p>
+
+            <p><strong>Playwright</strong> ships with a Trace Viewer — an HTML report that shows screenshots, network requests, console logs, and DOM snapshots for every step of every test. The <code>--debug</code> flag opens Playwright Inspector for step-through debugging. Comparable to Cypress, arguably more powerful for complex investigations.</p>
+
+            <blockquote>Winner: Playwright and Cypress tie for debugging. Selenium is significantly behind.</blockquote>
+
+            <h2>8. Community & Job Market</h2>
+
+            <p>This is where Selenium's age becomes an asset.</p>
+
+            <p><strong>Selenium</strong> has 20+ years of Stack Overflow answers, tutorials, courses, and books. Nearly every QA job posting in India mentions Selenium. It's the standard for SDET interviews. GitHub: 30,000+ stars.</p>
+
+            <p><strong>Cypress</strong> has a large and active community — 47,000+ GitHub stars, extensive documentation, and a passionate developer community. Most frontend-focused QA roles now list Cypress.</p>
+
+            <p><strong>Playwright</strong> is growing fastest — 65,000+ GitHub stars (more than both), Microsoft backing, and rapidly increasing adoption. Job postings for Playwright have grown 300%+ since 2022. Still fewer learning resources than Selenium, but the gap is closing fast.</p>
+
+            <blockquote>Winner: Selenium for job market and learning resources today. Playwright for trajectory — it will dominate by 2026.</blockquote>
+
+            <!-- CTA inside article -->
+            <div class="article-cta-box">
+              <h3>📊 Want All 150+ QA Tools Compared?</h3>
+              <p>Our Ultimate QA Tools Database covers 150+ tools with pricing, language support, CI/CD compatibility, pros, cons, and GitHub stars — in a ready-to-filter CSV.</p>
+              <a href="/#premium" class="btn btn-premium" style="width:auto; display:inline-flex;">Get the Database →</a>
+            </div>
+
+            <h2>The Decision Matrix</h2>
+
+            <p>Use this table to make the call in under 60 seconds:</p>
+
+            <div class="compare-table-wrap">
+              <table class="compare-table">
+                <thead>
+                  <tr>
+                    <th>Your Situation</th>
+                    <th>Best Choice</th>
+                    <th>Why</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Team uses Java or Python</td>
+                    <td class="tc-good">Selenium or Playwright</td>
+                    <td>Cypress is JS-only</td>
+                  </tr>
+                  <tr>
+                    <td>Team uses JavaScript/TypeScript</td>
+                    <td class="tc-good">Playwright</td>
+                    <td>Best DX, fastest, multi-browser</td>
+                  </tr>
+                  <tr>
+                    <td>Need Safari / WebKit coverage</td>
+                    <td class="tc-good">Playwright</td>
+                    <td>Only framework with real WebKit</td>
+                  </tr>
+                  <tr>
+                    <td>Preparing for SDET interviews</td>
+                    <td class="tc-good">Selenium + TestNG</td>
+                    <td>90% of Indian QA interviews test this</td>
+                  </tr>
+                  <tr>
+                    <td>Small team, fast setup, JS stack</td>
+                    <td class="tc-good">Cypress</td>
+                    <td>Fastest time-to-first-test</td>
+                  </tr>
+                  <tr>
+                    <td>Large suite, need parallelism</td>
+                    <td class="tc-good">Playwright</td>
+                    <td>Built-in workers, fastest total time</td>
+                  </tr>
+                  <tr>
+                    <td>Need multi-tab or iFrame testing</td>
+                    <td class="tc-good">Playwright or Selenium</td>
+                    <td>Cypress struggles with multi-tab</td>
+                  </tr>
+                  <tr>
+                    <td>Legacy enterprise project</td>
+                    <td class="tc-good">Selenium</td>
+                    <td>Most compatible, most existing code</td>
+                  </tr>
+                  <tr>
+                    <td>Starting a new project in 2025</td>
+                    <td class="tc-good">Playwright</td>
+                    <td>Best all-around for new projects</td>
+                  </tr>
+                  <tr>
+                    <td>Need IE11 support</td>
+                    <td class="tc-good">Selenium</td>
+                    <td>Only one that still supports IE</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h2>The Verdict</h2>
+
+            <p><strong>For new projects in 2025: Playwright wins.</strong> It offers genuine multi-browser coverage, multi-language support, the fastest parallel execution, excellent debugging tools, and Microsoft's long-term backing. If you're starting fresh and your team knows JavaScript, Python, Java, or C# — Playwright is the right call.</p>
+
+            <p><strong>For JavaScript-focused teams that want the simplest possible setup: Cypress is excellent.</strong> Its developer experience is second to none, and its time-travel debugging is genuinely magical. Just accept the browser coverage trade-offs.</p>
+
+            <p><strong>For SDET interview prep and enterprise Java/Python projects: Selenium remains essential.</strong> It's what 80% of QA job descriptions in India ask for. The Selenium + TestNG + Page Object Model combination is the dominant pattern in the market. Learn it regardless of what framework you use day-to-day.</p>
+
+            <p>The pragmatic answer for most engineers: <strong>learn Selenium first</strong> (for interviews and jobs), then <strong>adopt Playwright</strong> for your actual automation work. Cypress is worth knowing if your organization is JavaScript-first.</p>
+
+            <h2>Further Resources</h2>
+            <ul>
+              <li><a href="https://selenium.dev/documentation/" target="_blank" rel="noopener">Selenium Official Documentation</a></li>
+              <li><a href="https://docs.cypress.io" target="_blank" rel="noopener">Cypress Documentation</a></li>
+              <li><a href="https://playwright.dev/docs/intro" target="_blank" rel="noopener">Playwright Getting Started Guide</a></li>
+              <li><a href="/#directory">Browse all 50+ QA tools in our directory →</a></li>
+            </ul>
+
+            <!-- Bottom CTA -->
+            <div class="article-cta-box" style="margin-top:48px;">
+              <h3>🚀 Ready to Build a Production Framework?</h3>
+              <p>Get a complete Selenium + TestNG Page Object Model framework — pre-configured with Allure Reports, GitHub Actions CI, and parallel execution. Drop it in and start writing tests on Day 1.</p>
+              <a href="/#premium" class="btn btn-premium" style="width:auto; display:inline-flex;">Get Selenium Framework Kit →</a>
+            </div>
+
+          </article>
+
+          <!-- SIDEBAR -->
+          <aside class="blog-sidebar">
+
+            <div class="sidebar-widget">
+              <h3 class="widget-title">📑 In This Article</h3>
+              <nav class="toc">
+                <a href="#" class="toc-link">Quick Overview</a>
+                <a href="#" class="toc-link">1. Setup Complexity</a>
+                <a href="#" class="toc-link">2. Browser Support</a>
+                <a href="#" class="toc-link">3. Language Support</a>
+                <a href="#" class="toc-link">4. Execution Speed</a>
+                <a href="#" class="toc-link">5. Automatic Waiting</a>
+                <a href="#" class="toc-link">6. CI/CD Integration</a>
+                <a href="#" class="toc-link">7. Debugging</a>
+                <a href="#" class="toc-link">8. Community</a>
+                <a href="#" class="toc-link">Decision Matrix</a>
+                <a href="#" class="toc-link">The Verdict</a>
+              </nav>
+            </div>
+
+            <!-- AD SLOT — SIDEBAR 300x250 -->
+            <div class="sidebar-widget ad-sidebar" aria-label="Advertisement">
+              <!-- ADSTERRA 300x250 — PASTE YOUR CODE BELOW -->
+              <div class="ad-placeholder" style="height:250px; max-width:300px;"><span>Advertisement</span></div>
+            </div>
+
+            <div class="sidebar-widget">
+              <h3 class="widget-title">⭐ Related Products</h3>
+              <div class="sidebar-premium-links">
+                <a href="/#premium" class="sidebar-premium-item">
+                  <span>🚀</span>
+                  <span>Selenium + TestNG Framework</span>
+                </a>
+                <a href="/#premium" class="sidebar-premium-item">
+                  <span>🗄</span>
+                  <span>QA Tools Database CSV</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="sidebar-widget">
+              <h3 class="widget-title">📂 More Articles</h3>
+              <div class="sidebar-premium-links">
+                <a href="/blog/" class="sidebar-premium-item">
+                  <span>✍️</span>
+                  <span>View All Articles</span>
+                </a>
+                <a href="/#directory" class="sidebar-premium-item">
+                  <span>⚡</span>
+                  <span>Browse Tool Directory</span>
+                </a>
+              </div>
+            </div>
+
+          </aside>
+
+        </div><!-- /article-layout -->
+      </div>
+    </section>
+
+    <!-- AD SLOT — BEFORE FOOTER -->
+    <div class="ad-container ad-footer-top" aria-label="Advertisement">
+      <div class="ad-placeholder"><span>Advertisement</span></div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="/" class="logo">
+          <span class="logo-icon">⚡</span>
+          <span class="logo-text">QA<span class="logo-accent">Tools</span>.dev</span>
+        </a>
+        <p>The free, independent QA & Automation tools directory and blog.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Directory</h4>
+          <a href="/#directory">All Tools</a>
+          <a href="/#categories">Categories</a>
+          <a href="/#downloads">Free Downloads</a>
+        </div>
+        <div class="footer-col">
+          <h4>Blog</h4>
+          <a href="/blog/">All Articles</a>
+          <a href="/blog/selenium-vs-cypress-vs-playwright.html">Selenium vs Cypress vs Playwright</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Advertise</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2025 QATools.dev · Built with ❤️ for the QA community · Hosted on GitHub Pages</p>
+        <p class="footer-disclaimer">This site contains display advertisements. All editorial content is independent.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('mobileMenu').classList.toggle('open');
+    }
+    window.addEventListener('scroll', () => {
+      document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 10);
+    });
+  </script>
+
+  <!-- Table of Contents scroll -->
+  <style>
+    .toc { display:flex; flex-direction:column; gap:4px; }
+    .toc-link {
+      font-size:0.82rem;
+      color:var(--text-secondary);
+      padding:5px 10px;
+      border-radius:var(--radius-sm);
+      text-decoration:none;
+      transition:background 0.2s, color 0.2s;
+    }
+    .toc-link:hover { background:var(--bg-base); color:var(--accent-light); }
+  </style>
+
+</body>
+</html>

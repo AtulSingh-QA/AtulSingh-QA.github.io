@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>QA & Automation Blog | Testing Tutorials, Guides & Tool Comparisons</title>
+  <meta name="description" content="Free in-depth tutorials, tool comparisons, and career guides for QA engineers and SDETs. Selenium, Cypress, Playwright, API testing, CI/CD, and more." />
+  <meta name="keywords" content="QA blog, automation testing tutorials, selenium guide, cypress tutorial, playwright, api testing, SDET career, software testing articles" />
+  <meta name="author" content="AtulSingh-QA" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://atulsingh-qa.github.io/blog/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://atulsingh-qa.github.io/blog/" />
+  <meta property="og:title" content="QA & Automation Blog | Tutorials, Guides & Tool Comparisons" />
+  <meta property="og:description" content="Free in-depth tutorials for QA engineers. Selenium, Cypress, Playwright, API testing, CI/CD pipelines, and career growth." />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "QA & Automation Blog",
+    "url": "https://atulsingh-qa.github.io/blog/",
+    "description": "Tutorials, tool comparisons and career guides for QA engineers and SDETs.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "QATools.dev",
+      "url": "https://atulsingh-qa.github.io/"
+    }
+  }
+  </script>
+
+  <!-- ADSTERRA_HEAD_SCRIPT_PLACEHOLDER -->
+
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="blog.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">⚡</span>
+        <span class="logo-text">QA<span class="logo-accent">Tools</span>.dev</span>
+      </a>
+      <nav class="nav-links">
+        <a href="/#directory">Directory</a>
+        <a href="/#categories">Categories</a>
+        <a href="/blog/" class="active-nav">Blog</a>
+        <a href="/#downloads">Free Downloads</a>
+        <a href="/#premium" class="nav-cta">⬇ Premium Kits</a>
+      </nav>
+      <button class="hamburger" aria-label="Open menu" onclick="toggleMenu()">☰</button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="/#directory" onclick="toggleMenu()">Directory</a>
+      <a href="/blog/" onclick="toggleMenu()">Blog</a>
+      <a href="/#downloads" onclick="toggleMenu()">Free Downloads</a>
+      <a href="/#premium" onclick="toggleMenu()">Premium Kits</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- BLOG HERO -->
+    <section class="blog-hero">
+      <div class="container">
+        <div class="hero-badge">✍️ QA Knowledge Base</div>
+        <h1 class="hero-title">The QA <span class="gradient-text">Blog</span></h1>
+        <p class="hero-subtitle">In-depth tutorials, honest tool comparisons, and career playbooks for QA engineers and SDETs. No fluff. Just signal.</p>
+      </div>
+    </section>
+
+    <!-- AD SLOT — BELOW HERO -->
+    <div class="ad-container ad-banner" aria-label="Advertisement">
+      <!-- ADSTERRA BANNER — PASTE YOUR CODE BELOW -->
+      <div class="ad-placeholder"><span>Advertisement</span></div>
+    </div>
+
+    <!-- FEATURED ARTICLE -->
+    <section class="blog-section">
+      <div class="container">
+
+        <div class="blog-featured">
+          <a href="/blog/selenium-vs-cypress-vs-playwright.html" class="featured-card">
+            <div class="featured-label-pill">🔥 Featured</div>
+            <div class="featured-content">
+              <div class="post-meta">
+                <span class="post-cat">Tool Comparison</span>
+                <span class="post-date">June 2025</span>
+                <span class="post-read">⏱ 12 min read</span>
+              </div>
+              <h2 class="featured-title">Selenium vs Cypress vs Playwright (2025): The Definitive Comparison for QA Engineers</h2>
+              <p class="featured-excerpt">The three titans of UI automation — compared across setup complexity, speed, browser support, CI/CD integration, language support, community size, and real-world maintainability. With a decision matrix to help you pick the right one for your team.</p>
+              <span class="read-more-link">Read Article →</span>
+            </div>
+          </a>
+        </div>
+
+        <!-- BLOG GRID -->
+        <div class="blog-layout">
+          <div class="blog-main">
+
+            <h2 class="blog-section-title">Latest Articles</h2>
+
+            <div class="blog-grid">
+
+              <article class="blog-card">
+                <div class="blog-card-top">
+                  <span class="post-cat">Beginner Guide</span>
+                  <span class="post-date">May 2025</span>
+                </div>
+                <h3><a href="/blog/selenium-vs-cypress-vs-playwright.html">Selenium vs Cypress vs Playwright: Which Should You Learn in 2025?</a></h3>
+                <p>A no-nonsense breakdown of the three most popular UI automation frameworks — with a decision matrix based on your team's language, scale, and CI requirements.</p>
+                <div class="blog-card-footer">
+                  <span class="post-read">⏱ 12 min</span>
+                  <a href="/blog/selenium-vs-cypress-vs-playwright.html" class="read-link">Read →</a>
+                </div>
+              </article>
+
+              <article class="blog-card">
+                <div class="blog-card-top">
+                  <span class="post-cat cat-api">API Testing</span>
+                  <span class="post-date">Coming Soon</span>
+                </div>
+                <h3><a href="#">Postman vs REST Assured vs Karate DSL: The API Testing Showdown</a></h3>
+                <p>When to use a GUI tool vs a code-first framework vs a BDD approach. Complete with real test examples, CI/CD integration steps, and team size recommendations.</p>
+                <div class="blog-card-footer">
+                  <span class="post-read">⏱ 10 min</span>
+                  <span class="coming-soon-pill">Coming Soon</span>
+                </div>
+              </article>
+
+              <article class="blog-card">
+                <div class="blog-card-top">
+                  <span class="post-cat cat-career">Career</span>
+                  <span class="post-date">Coming Soon</span>
+                </div>
+                <h3><a href="#">How to Become an SDET in 2025: The Complete Roadmap</a></h3>
+                <p>Skills, tools, certifications, and the exact learning path to transition from manual QA to a ₹20–40 LPA SDET role — with real interview question patterns.</p>
+                <div class="blog-card-footer">
+                  <span class="post-read">⏱ 15 min</span>
+                  <span class="coming-soon-pill">Coming Soon</span>
+                </div>
+              </article>
+
+              <article class="blog-card">
+                <div class="blog-card-top">
+                  <span class="post-cat cat-perf">Performance</span>
+                  <span class="post-date">Coming Soon</span>
+                </div>
+                <h3><a href="#">JMeter vs k6 vs Gatling: Which Load Testing Tool Should You Use?</a></h3>
+                <p>Benchmark comparison of the three dominant performance tools — with identical test scenarios run on each to show real throughput, accuracy, and CI/CD friendliness.</p>
+                <div class="blog-card-footer">
+                  <span class="post-read">⏱ 11 min</span>
+                  <span class="coming-soon-pill">Coming Soon</span>
+                </div>
+              </article>
+
+              <article class="blog-card">
+                <div class="blog-card-top">
+                  <span class="post-cat">CI/CD</span>
+                  <span class="post-date">Coming Soon</span>
+                </div>
+                <h3><a href="#">Setting Up a Selenium + GitHub Actions Pipeline in 30 Minutes</a></h3>
+                <p>Step-by-step guide to running your entire Selenium test suite in the cloud for free using GitHub Actions — with headless Chrome, Allure reports, and failure notifications.</p>
+                <div class="blog-card-footer">
+                  <span class="post-read">⏱ 8 min</span>
+                  <span class="coming-soon-pill">Coming Soon</span>
+                </div>
+              </article>
+
+              <article class="blog-card">
+                <div class="blog-card-top">
+                  <span class="post-cat cat-ai">AI Testing</span>
+                  <span class="post-date">Coming Soon</span>
+                </div>
+                <h3><a href="#">AI-Powered Test Automation in 2025: Hype vs Reality</a></h3>
+                <p>Honest evaluation of Testim, mabl, Functionize, and Healenium. Which tools actually reduce maintenance? Which are marketing fluff? Tested on real apps.</p>
+                <div class="blog-card-footer">
+                  <span class="post-read">⏱ 9 min</span>
+                  <span class="coming-soon-pill">Coming Soon</span>
+                </div>
+              </article>
+
+            </div><!-- /blog-grid -->
+          </div><!-- /blog-main -->
+
+          <!-- SIDEBAR -->
+          <aside class="blog-sidebar">
+
+            <div class="sidebar-widget">
+              <h3 class="widget-title">📂 Categories</h3>
+              <div class="widget-cats">
+                <a href="#" class="widget-cat">Tool Comparisons <span>1</span></a>
+                <a href="#" class="widget-cat">API Testing <span>1</span></a>
+                <a href="#" class="widget-cat">Career Guides <span>1</span></a>
+                <a href="#" class="widget-cat">Performance <span>1</span></a>
+                <a href="#" class="widget-cat">CI/CD <span>1</span></a>
+                <a href="#" class="widget-cat">AI Testing <span>1</span></a>
+              </div>
+            </div>
+
+            <!-- AD SLOT — SIDEBAR -->
+            <div class="sidebar-widget ad-sidebar" aria-label="Advertisement">
+              <!-- ADSTERRA 300x250 — PASTE YOUR CODE BELOW -->
+              <div class="ad-placeholder" style="height:250px; max-width:300px;"><span>Advertisement</span></div>
+            </div>
+
+            <div class="sidebar-widget">
+              <h3 class="widget-title">⬇ Free Download</h3>
+              <div class="sidebar-download">
+                <div class="dl-icon">📊</div>
+                <p>QA Tool Comparison Matrix — 50+ tools, 12 criteria, free CSV.</p>
+                <a href="/#downloads" class="btn btn-download" style="font-size:0.82rem; padding:9px 16px;">Get Free CSV</a>
+              </div>
+            </div>
+
+            <div class="sidebar-widget">
+              <h3 class="widget-title">⭐ Premium Kits</h3>
+              <div class="sidebar-premium-links">
+                <a href="/#premium" class="sidebar-premium-item">
+                  <span>🗄</span>
+                  <span>Ultimate QA Tools Database</span>
+                </a>
+                <a href="/#premium" class="sidebar-premium-item">
+                  <span>🚀</span>
+                  <span>Selenium + TestNG Framework</span>
+                </a>
+                <a href="/#premium" class="sidebar-premium-item">
+                  <span>🎯</span>
+                  <span>API Testing Masterpack</span>
+                </a>
+              </div>
+            </div>
+
+          </aside>
+        </div><!-- /blog-layout -->
+      </div>
+    </section>
+
+    <!-- AD SLOT — BEFORE FOOTER -->
+    <div class="ad-container ad-footer-top" aria-label="Advertisement">
+      <div class="ad-placeholder"><span>Advertisement</span></div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="/" class="logo">
+          <span class="logo-icon">⚡</span>
+          <span class="logo-text">QA<span class="logo-accent">Tools</span>.dev</span>
+        </a>
+        <p>The free, independent QA & Automation tools directory and blog.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Directory</h4>
+          <a href="/#directory">All Tools</a>
+          <a href="/#categories">Categories</a>
+          <a href="/#downloads">Free Downloads</a>
+        </div>
+        <div class="footer-col">
+          <h4>Blog</h4>
+          <a href="/blog/">All Articles</a>
+          <a href="/blog/selenium-vs-cypress-vs-playwright.html">Selenium vs Cypress</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Advertise</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2025 QATools.dev · Built with ❤️ for the QA community · Hosted on GitHub Pages</p>
+        <p class="footer-disclaimer">This site contains display advertisements. All editorial content is independent.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('mobileMenu').classList.toggle('open');
+    }
+    window.addEventListener('scroll', () => {
+      document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 10);
+    });
+  </script>
+
+</body>
+</html>
