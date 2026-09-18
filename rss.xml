@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI Survival Guide</title>
+    <link>https://atulsingh-qa.github.io/</link>
+    <description>The definitive guide to AI disruption, data center energy demands, and survival resources. Plain-English breakdowns for everyone.</description>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 15 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://atulsingh-qa.github.io/rss.xml" rel="self" type="application/rss+xml" />
+    <image>
+      <url>https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&amp;q=80</url>
+      <title>AI Survival Guide</title>
+      <link>https://atulsingh-qa.github.io/</link>
+    </image>
+
+    <item>
+      <title>The AI Takeover: Is Your Sector Next?</title>
+      <link>https://atulsingh-qa.github.io/</link>
+      <description>Millions of jobs. Billions of gallons of water. Entire power grids on the edge. This is what's actually happening with AI — and what you need to understand before it's too late.</description>
+      <pubDate>Mon, 15 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://atulsingh-qa.github.io/</guid>
+    </item>
+
+    <item>
+      <title>Decoding the Jargon: LLMs, Neural Networks, and Generative AI Explained</title>
+      <link>https://atulsingh-qa.github.io/#jargon</link>
+      <description>Plain-English definitions of the technical terms the AI industry uses to obscure what's really happening. LLMs, neural networks, parameters, GPU clusters — explained without a CS degree.</description>
+      <pubDate>Mon, 15 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://atulsingh-qa.github.io/#jargon</guid>
+    </item>
+
+    <item>
+      <title>The Grid Monsters: Data Centers, Water Usage, and the Energy Crisis Nobody Talks About</title>
+      <link>https://atulsingh-qa.github.io/#grid-monsters</link>
+      <description>AI data centers already consume 2% of global electricity and use billions of litres of water per day. By 2027, they will consume more electricity than the entire country of Japan.</description>
+      <pubDate>Mon, 15 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://atulsingh-qa.github.io/#grid-monsters</guid>
+    </item>
+
+  </channel>
+</rss>
